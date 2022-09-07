@@ -14,6 +14,18 @@ import Pagination from "../components/Swiper/Pagination";
 import { BmwILogo } from "../assets";
 import Menu from "../components/Menu/Menu";
 
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
 const HomePage = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [swipeSlide, setSwipeSlide] = useState(0);
@@ -27,7 +39,7 @@ const HomePage = () => {
   };
 
   return (
-    <Container>
+    <Container variants={containerVariants} initial="hidden" animate="visible">
       <header className="hero">
         <Swiper swipeSlide={swipeSlide} />
         <div className="hero__wrapper">

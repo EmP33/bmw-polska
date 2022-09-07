@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import img from "../assets/images/slider1.png";
-import imgMobile from "../assets/images/slider1-mobile.png";
+import { motion } from "framer-motion";
 
-export const Container = styled.main`
+export const Container = styled(motion.main)`
   width: 100%;
   height: 250vh; // TEMP
   overflow-x: hidden;

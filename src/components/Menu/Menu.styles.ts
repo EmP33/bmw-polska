@@ -5,7 +5,7 @@ export const Container = styled.div<{ showMenu: boolean }>`
   height: 100vh;
   background: var(--color-black);
   color: var(--color-white);
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 1000;

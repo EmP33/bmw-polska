@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 // Styles
 import { Container } from "./HomePage.styles";
 import { PrimaryButton } from "../Components.styles";
@@ -6,15 +7,24 @@ import { PrimaryButton } from "../Components.styles";
 import Appbar from "../components/Appbar/Appbar";
 // Icons
 import { BmwILogo } from "../assets";
+import Menu from "../components/Menu/Menu";
 
 const HomePage = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setShowMenu((prev) => !prev);
+  };
+
   return (
     <Container>
-      <section className="hero">
+      <header className="hero">
         <div className="hero__wrapper">
-          <Appbar />
+          <Appbar toggleMenu={handleToggleMenu} />
           <div className="hero__wrapper_info">
-            <BmwILogo />
+            <div>
+              <BmwILogo />
+            </div>
             <h1>
               <span>NOWE</span> BMW iX
             </h1>
@@ -22,7 +32,11 @@ const HomePage = () => {
           </div>
           <PrimaryButton>Umów jazdę próbną</PrimaryButton>
         </div>
-      </section>
+      </header>
+      {ReactDOM.createPortal(
+        <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
+        document.querySelector("#backdrop-root")!
+      )}
     </Container>
   );
 };

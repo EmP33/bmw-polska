@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> should render properly 1`] = `
+<styled.div
+  showMenu={true}
+>
+  <div
+    className="menu-action"
+  >
+    <div />
+    <BmwLogo />
+    <button
+      onClick={[MockFunction]}
+    >
+      ×
+    </button>
+  </div>
+  <ul>
+    <li>
+      NOWE BMW iX
+    </li>
+    <li>
+      INNOWACYJNA AERODYNAMIKA
+    </li>
+    <li>
+      GALERIA
+    </li>
+  </ul>
+  <styled.button>
+    UMÓW JAZDĘ PRÓBNĄ
+  </styled.button>
+</styled.div>
+`;

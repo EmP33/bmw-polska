@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Appbar /> should render properly 1`] = `
+<styled.nav>
+  <styled.button>
+    <span />
+    <span />
+    <span />
+  </styled.button>
+  <ul>
+    <li>
+      Nowe BMW iX
+    </li>
+    <li>
+      Umów jazdę próbną
+    </li>
+  </ul>
+  <BmwLogo />
+  <p>
+    <span>
+      Radość
+    </span>
+     z jazdy
+  </p>
+</styled.nav>
+`;

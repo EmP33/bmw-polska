@@ -47,6 +47,10 @@ export const Container = styled.main`
       align-items: center;
       justify-items: center;
 
+      @media only screen and (max-width: 900px) {
+        width: 80%;
+      }
+
       @media only screen and (max-width: 600px) {
         width: 85%;
       }

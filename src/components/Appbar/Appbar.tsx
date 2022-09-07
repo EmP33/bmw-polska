@@ -5,10 +5,14 @@ import { Container } from "./Appbar.styles";
 import { BmwLogo } from "../../assets";
 import { HamburgerButton } from "../../Components.styles";
 
-const Appbar = () => {
+interface Props {
+  toggleMenu: () => void;
+}
+
+const Appbar: React.FC<Props> = ({ toggleMenu }) => {
   return (
     <Container>
-      <HamburgerButton>
+      <HamburgerButton onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>

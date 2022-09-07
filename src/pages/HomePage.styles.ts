@@ -5,20 +5,12 @@ import imgMobile from "../assets/images/slider1-mobile.png";
 export const Container = styled.main`
   width: 100%;
   height: 250vh; // TEMP
+  overflow-x: hidden;
 
   .hero {
     position: relative;
     width: 100%;
     height: 88.4vh;
-    background: transparent url(${img}) 0% 0% no-repeat padding-box;
-    background-size: cover;
-    background-position: center;
-
-    @media only screen and (max-width: 360px) {
-      background: transparent url(${imgMobile}) 0% 0% no-repeat padding-box;
-      background-size: cover;
-      background-position: right;
-    }
 
     &::before {
       content: "";
@@ -31,7 +23,7 @@ export const Container = styled.main`
         linear-gradient(90deg, var(--color-black) 0%, #00000000 100%) 0% 0%
         no-repeat padding-box;
       opacity: 0.75;
-      z-index: 1;
+      z-index: 2;
     }
 
     &__wrapper {
@@ -42,10 +34,12 @@ export const Container = styled.main`
       top: 0;
       transform: translateX(-50%);
       height: 100%;
-      z-index: 2;
+      z-index: 1;
       display: grid;
       align-items: center;
       justify-items: center;
+      background: transparent;
+      z-index: 3;
 
       @media only screen and (max-width: 900px) {
         width: 80%;

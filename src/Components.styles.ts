@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PrimaryButton = styled.button`
   background: var(--color-blue);
   color: var(--color-white);
-  padding: 0.5rem 4rem;
+  padding: 0.75rem 5rem;
   font-size: 1.125rem;
   text-transform: uppercase;
   font-family: var(--font-heading);

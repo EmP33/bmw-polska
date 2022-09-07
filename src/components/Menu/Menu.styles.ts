@@ -48,6 +48,10 @@ export const Container = styled.div<{ showMenu: boolean }>`
       width: 40px;
       height: 40px;
       cursor: pointer;
+
+      &:hover {
+        filter: brightness(80%);
+      }
     }
   }
 
@@ -61,6 +65,11 @@ export const Container = styled.div<{ showMenu: boolean }>`
       font-family: var(--font-heading);
       font-weight: 600;
       padding: 2rem 0 2rem 0;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--color-gray-6);
+      }
 
       &:not(:last-child) {
         border-bottom: 1px solid #343434;

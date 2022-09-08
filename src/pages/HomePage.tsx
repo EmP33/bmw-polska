@@ -9,11 +9,12 @@ import { PrimaryButton } from "../Components.styles";
 import Appbar from "../components/Appbar/Appbar";
 import Swiper from "../components/Swiper/Swiper";
 import Pagination from "../components/Swiper/Pagination";
+import ContentSection from "../components/ContentSection/ContentSection";
+import Gallery from "../components/Gallery/Gallery";
 
 // Icons
 import { BmwILogo } from "../assets";
 import Menu from "../components/Menu/Menu";
-import ContentSection from "../components/ContentSection/ContentSection";
 
 const containerVariants = {
   hidden: {
@@ -63,6 +64,7 @@ const HomePage = () => {
       </header>
       <ContentSection type="blocks" />
       <ContentSection type="text" />
+      <Gallery />
       {ReactDOM.createPortal(
         <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
         document.querySelector("#backdrop-root")!

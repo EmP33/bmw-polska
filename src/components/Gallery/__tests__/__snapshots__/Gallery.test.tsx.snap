@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Gallery /> should render properly 1`] = `
+<styled.div>
+  <img
+    alt="BMW iX inside front"
+    src="inside-front@2x.png"
+  />
+  <img
+    alt="BMW iX back"
+    src="foto3_1@2x.png"
+  />
+  <img
+    alt="BMW iX inside back"
+    src="inside-back@2x.png"
+  />
+  <img
+    alt="BMW iX front"
+    src="slider1.png"
+  />
+  <img
+    alt="BMW iX back"
+    src="foto2_2@2x.png"
+  />
+</styled.div>
+`;

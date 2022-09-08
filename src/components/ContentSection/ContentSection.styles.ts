@@ -94,6 +94,11 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
       font-weight: 300;
       color: var(--color-gray-3);
       margin-bottom: 2rem;
+
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+      }
     }
 
     p {
@@ -101,6 +106,10 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
       font-family: var(--font-primary);
       color: var(--color-gray-1);
       line-height: 1.25rem;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 0.8125rem;
+      }
     }
 
     .content__blocks {

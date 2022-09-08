@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Greetings /> should render properly 1`] = `
+<Styled(Component)
+  animate="visible"
+  exit="exit"
+  initial="hidden"
+  variants={
+    Object {
+      "exit": Object {
+        "opacity": 0,
+      },
+      "hidden": Object {
+        "opacity": 0,
+      },
+      "visible": Object {
+        "opacity": 1,
+        "transition": Object {
+          "duration": 0.5,
+        },
+      },
+    }
+  }
+>
+  <div
+    className="wrapper"
+  >
+    <h3>
+      DZIĘKUJEMY
+    </h3>
+    <p>
+      Skontaktujemy się z Tobą w najbliższym możliwym terminie.
+    </p>
+    <styled.button
+      onClick={[MockFunction]}
+    >
+      OK
+    </styled.button>
+  </div>
+</Styled(Component)>
+`;

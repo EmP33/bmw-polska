@@ -134,11 +134,18 @@ export const Contact = styled.nav`
         row-gap: 1rem;
       }
 
+      [role="alert"] {
+        color: red;
+        font-family: var(--font-heading);
+        font-size: 0.875rem;
+      }
+
       .contact__radio-btns {
-        display: flex;
+        display: grid;
         column-gap: 1.5rem;
         color: var(--color-gray-3);
         font-size: 1.25rem;
+        grid-template-columns: repeat(2, max-content);
 
         /* The container */
         .container {
@@ -221,6 +228,7 @@ export const Contact = styled.nav`
       }
 
       input {
+        width: 100%;
         padding: 1rem 0 1rem 1rem;
         color: var(--color-gray-1);
         font-size: 0.875rem;

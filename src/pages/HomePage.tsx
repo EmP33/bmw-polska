@@ -12,11 +12,12 @@ import Pagination from "../components/Swiper/Pagination";
 import ContentSection from "../components/ContentSection/ContentSection";
 import Gallery from "../components/Gallery/Gallery";
 import Footer from "../components/Footer/Footer";
+import Menu from "../components/Menu/Menu";
+import Contact from "../components/Contact/Contact";
+import Greetings from "../components/Greetings/Greetings";
 
 // Icons
 import { BmwILogo } from "../assets";
-import Menu from "../components/Menu/Menu";
-import Contact from "../components/Contact/Contact";
 
 const containerVariants = {
   hidden: {
@@ -32,10 +33,15 @@ const containerVariants = {
 
 const HomePage = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showGreetings, setShowGreetings] = useState(false);
   const [swipeSlide, setSwipeSlide] = useState(0);
 
   const handleToggleMenu = () => {
     setShowMenu((prev) => !prev);
+  };
+
+  const handleGreetings = () => {
+    setShowGreetings((prev) => !prev);
   };
 
   const handleChangeSlide = (numb: number) => {
@@ -61,18 +67,25 @@ const HomePage = () => {
             swipeSlide={swipeSlide}
             handleChangeSlide={handleChangeSlide}
           />
-          <PrimaryButton>Umów jazdę próbną</PrimaryButton>
+          <PrimaryButton>
+            <a href="#contact">Umów jazdę próbną</a>
+          </PrimaryButton>
         </div>
       </header>
       <ContentSection type="blocks" />
       <ContentSection type="text" />
       <Gallery />
-      <Contact />
+      <Contact handleGreetings={handleGreetings} />
       <Footer />
       {ReactDOM.createPortal(
         <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
         document.querySelector("#backdrop-root")!
       )}
+      {showGreetings &&
+        ReactDOM.createPortal(
+          <Greetings handleGreetings={handleGreetings} />,
+          document.querySelector("#backdrop-root")!
+        )}
     </Container>
   );
 };

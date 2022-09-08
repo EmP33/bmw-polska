@@ -11,6 +11,11 @@ export const PrimaryButton = styled.button`
   cursor: pointer;
   transition: all 0.2s;
 
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
   @media only screen and (max-width: 600px) {
     font-size: 0.875rem;
     padding: 0.75rem 3.5rem;

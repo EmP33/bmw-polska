@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> should render properly 1`] = `
+<styled.div
+  id="contact"
+>
+  <styled.nav>
+    <img
+      alt="bmw ix from front"
+      src="bmw-ix-front.png"
+    />
+    <Path12 />
+    <Path13 />
+    <Path14 />
+    <Path15 />
+    <div
+      className="contact__header"
+    >
+      <h3>
+        UMÓW JAZDĘ PRÓBNĄ 
+        <sup>
+          BMW iX
+        </sup>
+      </h3>
+      <p>
+        Zachęcamy do ograniczenia poruszania się i pozostania w domu. 
+        <br />
+        Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.
+      </p>
+    </div>
+    <div
+      className="contact__form"
+    >
+      <h6>
+        Wypełnij formularz swoimi danymi.
+      </h6>
+      <form
+        onSubmit={[Function]}
+      >
+        <div
+          className="contact__radio-btns"
+        >
+          <label
+            className="container"
+            htmlFor="mr"
+          >
+            <input
+              id="mr"
+              name="gender"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="he"
+            />
+            <span
+              className="checkmark"
+            />
+            Pan
+          </label>
+          <label
+            className="container"
+            htmlFor="mrs"
+          >
+            <input
+              id="mrs"
+              name="gender"
+              onBlur={[Function]}
+              onChange={[Function]}
+              type="radio"
+              value="she"
+            />
+            <span
+              className="checkmark"
+            />
+            Pani
+          </label>
+        </div>
+        <div
+          className="input-wrapper"
+        >
+          <input
+            name="name"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Imię*"
+            type="text"
+          />
+        </div>
+        <div
+          className="input-wrapper"
+        >
+          <input
+            name="surname"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Nazwisko*"
+            type="text"
+          />
+        </div>
+        <div
+          className="input-wrapper"
+        >
+          <input
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="E-mail*"
+            type="text"
+          />
+        </div>
+        <div
+          className="input-wrapper"
+        >
+          <input
+            name="phone"
+            onBlur={[Function]}
+            onChange={[Function]}
+            placeholder="Numer telefonu*"
+            type="number"
+          />
+        </div>
+        <styled.button
+          type="submit"
+        >
+          WYŚLIJ
+        </styled.button>
+      </form>
+    </div>
+    <img
+      alt="bmw ix from side"
+      src="13273-2022-bmw-ix.png"
+    />
+  </styled.nav>
+</styled.div>
+`;

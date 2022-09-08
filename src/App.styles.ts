@@ -25,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
         background: var(--color-white);
         scroll-behavior: smooth;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
     
     *{
         margin:0;

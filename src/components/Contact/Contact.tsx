@@ -7,9 +7,40 @@ import frontBmw from "../../assets/images/bmw-ix-front.png";
 import sideBmw from "../../assets/images/13273-2022-bmw-ix.png";
 import { Path12, Path13, Path14, Path15 } from "../../assets";
 
-const ContactComponent = () => {
+// React hook form
+import { useForm, SubmitHandler } from "react-hook-form";
+
+type Inputs = {
+  gender: string;
+  name: string;
+  surname: string;
+  email: string;
+  phone: string;
+};
+interface Props {
+  handleGreetings: () => void;
+}
+
+const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { errors },
+  } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    handleGreetings();
+
+    setValue("gender", "");
+    setValue("name", "");
+    setValue("surname", "");
+    setValue("email", "");
+    setValue("phone", "");
+  };
+
   return (
-    <Container>
+    <Container id="contact">
       <Contact>
         <img src={frontBmw} alt="bmw ix from front" />
         <Path12 />
@@ -28,23 +59,73 @@ const ContactComponent = () => {
         </div>
         <div className="contact__form">
           <h6>Wypełnij formularz swoimi danymi.</h6>
-          <form onSubmit={() => console.log("submitted")}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="contact__radio-btns">
               <label htmlFor="mr" className="container">
-                <input type="radio" name="gender" id="mr" />
+                <input
+                  type="radio"
+                  id="mr"
+                  value="he"
+                  {...register("gender", { required: true })}
+                />
                 <span className="checkmark"></span>
                 Pan
               </label>
               <label htmlFor="mrs" className="container">
-                <input type="radio" name="gender" id="mrs" />
+                <input
+                  type="radio"
+                  id="mrs"
+                  value="she"
+                  {...register("gender", { required: true })}
+                />
                 <span className="checkmark"></span>
                 Pani
               </label>
+              {errors.gender && <span role="alert">Wybierz płeć</span>}
             </div>
-            <input type="text" placeholder="Imię*" />
-            <input type="text" placeholder="Nazwisko*" />
-            <input type="text" placeholder="E-mail*" />
-            <input type="text" placeholder="Numer telefonu*" />
+            <div className="input-wrapper">
+              <input
+                type="text"
+                placeholder="Imię*"
+                {...register("name", { required: true })}
+              />
+              {errors.name && (
+                <span role="alert">Pole imię nie może być puste.</span>
+              )}
+            </div>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                placeholder="Nazwisko*"
+                {...register("surname", { required: true })}
+              />
+              {errors.surname && (
+                <span role="alert">Pole nazwisko nie może być puste.</span>
+              )}
+            </div>
+            <div className="input-wrapper">
+              <input
+                type="text"
+                placeholder="E-mail*"
+                {...register("email", {
+                  required: true,
+                  pattern: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/i,
+                })}
+              />
+              {errors.email && (
+                <span role="alert">Wprowadź poprawny adres email.</span>
+              )}
+            </div>
+            <div className="input-wrapper">
+              <input
+                type="number"
+                placeholder="Numer telefonu*"
+                {...register("phone", { required: true, minLength: 9 })}
+              />
+              {errors.phone && (
+                <span role="alert">Wprowadź poprawny numer.</span>
+              )}
+            </div>
             <PrimaryButton type="submit">WYŚLIJ</PrimaryButton>
           </form>
         </div>

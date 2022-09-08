@@ -1,10 +1,10 @@
-import Appbar from "../Appbar";
+import Footer from "../Footer";
 import ReactShallowRenderer from "react-test-renderer/shallow";
 
-describe("<Appbar />", () => {
-  it("should render properly", () => {
+describe("<Footer />", () => {
+  it("should render Footer properly", () => {
     const renderer = new ReactShallowRenderer();
-    renderer.render(<Appbar toggleMenu={jest.fn()} />);
+    renderer.render(<Footer />);
     expect(renderer.getRenderOutput()).toMatchSnapshot();
   });
 });

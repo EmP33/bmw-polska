@@ -2,7 +2,9 @@
 
 exports[`<Appbar /> should render properly 1`] = `
 <styled.nav>
-  <styled.button>
+  <styled.button
+    onClick={[MockFunction]}
+  >
     <span />
     <span />
     <span />

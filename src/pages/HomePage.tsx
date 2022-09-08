@@ -11,6 +11,7 @@ import Swiper from "../components/Swiper/Swiper";
 import Pagination from "../components/Swiper/Pagination";
 import ContentSection from "../components/ContentSection/ContentSection";
 import Gallery from "../components/Gallery/Gallery";
+import Footer from "../components/Footer/Footer";
 
 // Icons
 import { BmwILogo } from "../assets";
@@ -67,6 +68,7 @@ const HomePage = () => {
       <ContentSection type="text" />
       <Gallery />
       <Contact />
+      <Footer />
       {ReactDOM.createPortal(
         <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
         document.querySelector("#backdrop-root")!

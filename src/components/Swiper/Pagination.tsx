@@ -15,6 +15,7 @@ const PaginationComponent: React.FC<Props> = ({
     <Pagination>
       <label className="container">
         <input
+          data-testid="pag1"
           type="radio"
           name="pagination"
           id="pag1"
@@ -25,9 +26,10 @@ const PaginationComponent: React.FC<Props> = ({
       </label>
       <label className="container">
         <input
+          data-testid="pag2"
           type="radio"
           name="pagination"
-          id="pag1"
+          id="pag2"
           onChange={handleChangeSlide.bind(null, 1)}
           checked={swipeSlide === 1}
         />
@@ -35,9 +37,10 @@ const PaginationComponent: React.FC<Props> = ({
       </label>
       <label className="container">
         <input
+          data-testid="pag3"
           type="radio"
           name="pagination"
-          id="pag1"
+          id="pag3"
           onChange={handleChangeSlide.bind(null, 2)}
           checked={swipeSlide === 2}
         />

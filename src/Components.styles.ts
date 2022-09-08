@@ -13,6 +13,7 @@ export const PrimaryButton = styled.button`
 
   @media only screen and (max-width: 600px) {
     font-size: 0.875rem;
+    padding: 0.75rem 3.5rem;
   }
 
   &:hover {

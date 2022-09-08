@@ -7,10 +7,12 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <AnimatePresence exitBeforeEnter>
+    <>
       <GlobalStyle />
-      <HomePage />
-    </AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
+        <HomePage />
+      </AnimatePresence>
+    </>
   );
 }
 

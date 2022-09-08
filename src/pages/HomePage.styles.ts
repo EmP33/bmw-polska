@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 export const Container = styled(motion.main)`
   width: 100%;
-  height: 250vh; // TEMP
   overflow-x: hidden;
 
   .hero {
     position: relative;
     width: 100%;
     height: 88.4vh;
+    margin-bottom: 11.6vh;
 
     &::before {
       content: "";

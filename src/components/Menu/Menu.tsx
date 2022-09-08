@@ -15,7 +15,9 @@ const Menu: React.FC<Props> = ({ toggleMenu, showMenu }) => {
       <div className="menu-action">
         <div></div>
         <BmwLogo />
-        <button onClick={toggleMenu}>&times;</button>
+        <button type="button" onClick={toggleMenu}>
+          &times;
+        </button>
       </div>
       <ul>
         <li>NOWE BMW iX</li>

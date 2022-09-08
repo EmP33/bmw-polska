@@ -11,6 +11,7 @@ exports[`<Menu /> should render properly 1`] = `
     <BmwLogo />
     <button
       onClick={[MockFunction]}
+      type="button"
     >
       ×
     </button>

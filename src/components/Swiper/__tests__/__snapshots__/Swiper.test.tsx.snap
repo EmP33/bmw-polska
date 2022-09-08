@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Swiper /> should render Swiper Component properly 1`] = `
+<styled.div
+  swipeSlide={0}
+>
+  <div
+    className="slide"
+  >
+    <img
+      alt="New BMW iX slide"
+      src="slider1-mobile.png"
+    />
+  </div>
+  <div
+    className="slide"
+  >
+    <img
+      alt="New BMW iX slide"
+      src="slider1-mobile.png"
+    />
+  </div>
+  <div
+    className="slide"
+  >
+    <img
+      alt="New BMW iX slide"
+      src="slider1-mobile.png"
+    />
+  </div>
+</styled.div>
+`;

@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ContentSection /> should render ContentSection blocks type properly 1`] = `
+<styled.section
+  type="blocks"
+>
+  <div
+    className="content"
+  >
+    <ElectricStation />
+    <h2>
+      FAKTY O NOWYM BMW iX.
+    </h2>
+    <div
+      className="content__blocks"
+    >
+      <div
+        className="block"
+      >
+        <h6>
+          01
+        </h6>
+        <p>
+          Ponad 600 km zasięgu *
+        </p>
+      </div>
+      <div
+        className="block"
+      >
+        <h6>
+          02
+        </h6>
+        <p>
+          Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi
+          <br />
+          elektrycznie i ponad 500 KM
+          <br />
+           (370 kW) *
+        </p>
+      </div>
+      <div
+        className="block"
+      >
+        <h6>
+          03
+        </h6>
+        <p>
+          Od 0 do 100 km / h 
+          <br />
+           w mniej niż 5 sekund *
+        </p>
+      </div>
+      <div
+        className="block"
+      >
+        <h6>
+          04
+        </h6>
+        <p>
+          Ładowanie 120 km 
+          <br />
+           w 10 minut *
+        </p>
+      </div>
+      <div
+        className="block"
+      >
+        <h6>
+          05
+        </h6>
+        <p>
+          Publiczne szybkie ładowanie od 10 do 80% w mniej niż 
+          <br />
+           40 minut
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    className="images"
+  >
+    <img
+      alt="BMW iX from front side"
+      src="foto1_1.png"
+    />
+    <img
+      alt="Two cards sideways"
+      src="foto1_2.png"
+    />
+  </div>
+</styled.section>
+`;
+
+exports[`<ContentSection /> should render ContentSection text type properly 1`] = `
+<styled.section
+  type="text"
+>
+  <div
+    className="content"
+  >
+    <Car />
+    <h2>
+      INNOWACYJNA AERODYNAMIKA BMW iX.
+    </h2>
+    <h4>
+      BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę „forma podąża za funkcją”.
+    </h4>
+    <p>
+      Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz dyfuzorem z tyłu i niezwykłymi detalami, takimi jak wpuszczane klamki czy zintegrowane z listwami szybowymi lusterka zewnętrzne, BMW iX osiąga doskonały współczynnik Cx wynoszący zaledwie 0,25. Dzięki temu łączy w sobie zasięg i wydajność z innowacyjną konstrukcją SAV-a.
+    </p>
+  </div>
+  <div
+    className="images"
+  >
+    <img
+      alt="BMW iX from back side"
+      src="foto2_2.png"
+    />
+    <img
+      alt="BMW iX sideways"
+      src="foto2_1.png"
+    />
+  </div>
+</styled.section>
+`;

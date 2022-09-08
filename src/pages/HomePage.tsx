@@ -13,6 +13,7 @@ import Pagination from "../components/Swiper/Pagination";
 // Icons
 import { BmwILogo } from "../assets";
 import Menu from "../components/Menu/Menu";
+import ContentSection from "../components/ContentSection/ContentSection";
 
 const containerVariants = {
   hidden: {
@@ -60,6 +61,8 @@ const HomePage = () => {
           <PrimaryButton>Umów jazdę próbną</PrimaryButton>
         </div>
       </header>
+      <ContentSection type="blocks" />
+      <ContentSection type="text" />
       {ReactDOM.createPortal(
         <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
         document.querySelector("#backdrop-root")!

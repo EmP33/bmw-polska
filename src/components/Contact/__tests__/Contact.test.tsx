@@ -1,11 +1,7 @@
 import Contact from "../Contact";
 import ReactShallowRenderer from "react-test-renderer/shallow";
-import { screen, render, fireEvent } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-
-const mockMessage = jest.fn((gender, name, surname, email, phone) => {
-  return Promise.resolve({ gender, name, surname, email, phone });
-});
 
 describe("<Contact />", () => {
   it("should render properly", () => {
@@ -62,7 +58,6 @@ describe("<Contact />", () => {
     const surnameInput = screen.getByPlaceholderText("Nazwisko*");
     const emailInput = screen.getByPlaceholderText("E-mail*");
     const phoneInput = screen.getByPlaceholderText("Numer telefonu*");
-
     userEvent.click(radioButton);
     userEvent.type(nameInput, "John");
     userEvent.type(surnameInput, "Doe");

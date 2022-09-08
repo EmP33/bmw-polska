@@ -5,7 +5,10 @@ import GlobalStyle from "./App.styles";
 // Pages
 import HomePage from "./pages/HomePage";
 
+import AOS from "aos";
+
 function App() {
+  AOS.init();
   return (
     <>
       <GlobalStyle />

@@ -4,8 +4,8 @@ import React from "react";
 import { Swiper } from "./Swiper.styles";
 
 // Images
-import SlideImg from "../../assets/images/slider1.png";
-import MobileSlideImg from "../../assets/images/slider1-mobile.png";
+import SlideImg from "../../assets/images/slider1.webp";
+import MobileSlideImg from "../../assets/images/slider1-mobile.webp";
 
 // Hooks
 import useMediaQuery from "../../hooks/useMediaQuery";
@@ -15,7 +15,7 @@ interface Props {
 }
 
 const SwiperComponent: React.FC<Props> = ({ swipeSlide }) => {
-  const matches = useMediaQuery("(min-width: 360px)");
+  const matches = useMediaQuery("(min-width: 401px)");
   return (
     <Swiper swipeSlide={swipeSlide}>
       <div className="slide">

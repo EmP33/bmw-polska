@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="footer-links">
           <div className="footer-links__client">
-            <h5>Strefa Klienta</h5>
+            <span>Strefa Klienta</span>
             <ul>
               <li>
                 <a href="#">Centrum Obsługi Klienta BMW</a>
@@ -42,7 +42,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-links__bmw">
-            <h5>Poznaj BMW</h5>
+            <span>Poznaj BMW</span>
             <ul>
               <li>
                 <a href="#">Informacje prasowe</a>
@@ -56,7 +56,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer-links__info">
-            <h5>Informacje prawne</h5>
+            <span>Informacje prawne</span>
             <ul>
               <li>
                 <a href="#">Mapa serwisu</a>

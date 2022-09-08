@@ -69,7 +69,7 @@ export const Container = styled(motion.main)`
             }
           }
         }
-        & > h3 {
+        & > h2 {
           font-size: 1rem;
           font-family: var(--font-heading);
           font-weight: 600;

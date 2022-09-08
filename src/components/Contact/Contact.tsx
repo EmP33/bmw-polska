@@ -3,8 +3,8 @@ import React from "react";
 import { PrimaryButton } from "../../Components.styles";
 import { Container, Contact } from "./Contact.styles";
 // Images
-import frontBmw from "../../assets/images/bmw-ix-front.png";
-import sideBmw from "../../assets/images/13273-2022-bmw-ix.png";
+import frontBmw from "../../assets/images/bmw-ix-front.webp";
+import sideBmw from "../../assets/images/13273-2022-bmw-ix.webp";
 import { Path12, Path13, Path14, Path15 } from "../../assets";
 
 // React hook form
@@ -42,7 +42,12 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
   return (
     <Container id="contact">
       <Contact>
-        <img src={frontBmw} alt="bmw ix from front" />
+        <img
+          src={frontBmw}
+          alt="bmw ix from front"
+          data-aos="fade-right"
+          data-aos-offset="1000"
+        />
         <Path12 />
         <Path13 />
         <Path14 />
@@ -58,7 +63,7 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
           </p>
         </div>
         <div className="contact__form">
-          <h6>Wypełnij formularz swoimi danymi.</h6>
+          <h4>Wypełnij formularz swoimi danymi.</h4>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="contact__radio-btns">
               <label htmlFor="mr" className="container">
@@ -129,7 +134,12 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
             <PrimaryButton type="submit">WYŚLIJ</PrimaryButton>
           </form>
         </div>
-        <img src={sideBmw} alt="bmw ix from side" />
+        <img
+          src={sideBmw}
+          alt="bmw ix from side"
+          data-aos="fade-left"
+          data-aos-offset="500"
+        />
       </Contact>
     </Container>
   );

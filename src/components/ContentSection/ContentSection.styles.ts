@@ -88,7 +88,7 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
       }
     }
 
-    h4 {
+    h3 {
       font-size: 1.25rem;
       font-family: var(--font-primary);
       font-weight: 300;
@@ -126,7 +126,7 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
           width: 100%;
           height: auto;
         }
-        h6 {
+        h3 {
           font-size: 0.75rem;
           font-family: var(--font-heading);
           font-weight: bold;

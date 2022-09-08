@@ -117,7 +117,7 @@ export const Contact = styled.nav`
     @media only screen and (max-width: 600px) {
       padding: 1rem 2rem 2rem 2rem;
     }
-    h6 {
+    h4 {
       font-size: 1.25rem;
       font-family: var(--font-heading);
       font-weight: 600;

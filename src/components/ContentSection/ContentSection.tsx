@@ -5,10 +5,10 @@ import { Car } from "../../assets";
 import { ElectricStation } from "../../assets";
 
 // Images
-import foto1 from "../../assets/images/foto1_1.png";
-import foto2 from "../../assets/images/foto1_2.png";
-import foto3 from "../../assets/images/foto2_1.png";
-import foto4 from "../../assets/images/foto2_2.png";
+import foto1 from "../../assets/images/foto1_1.webp";
+import foto2 from "../../assets/images/foto1_2.webp";
+import foto3 from "../../assets/images/foto2_1.webp";
+import foto4 from "../../assets/images/foto2_2.webp";
 
 // Styles
 import { ContentSection } from "./ContentSection.styles";
@@ -21,16 +21,16 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
   return (
     <ContentSection type={type}>
       {type === "blocks" ? (
-        <div className="content">
+        <div className="content" data-aos="fade-up">
           <ElectricStation />
           <h2>FAKTY O NOWYM BMW iX.</h2>
           <div className="content__blocks">
             <div className="block">
-              <h6>01</h6>
+              <h3>01</h3>
               <p>Ponad 600 km zasięgu *</p>
             </div>
             <div className="block">
-              <h6>02</h6>
+              <h3>02</h3>
               <p>
                 Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi
                 <br />
@@ -39,19 +39,19 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
               </p>
             </div>
             <div className="block">
-              <h6>03</h6>
+              <h3>03</h3>
               <p>
                 Od 0 do 100 km / h <br /> w mniej niż 5 sekund *
               </p>
             </div>
             <div className="block">
-              <h6>04</h6>
+              <h3>04</h3>
               <p>
                 Ładowanie 120 km <br /> w 10 minut *
               </p>
             </div>
             <div className="block">
-              <h6>05</h6>
+              <h3>05</h3>
               <p>
                 Publiczne szybkie ładowanie od 10 do 80% w mniej niż <br /> 40
                 minut
@@ -60,13 +60,13 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
           </div>
         </div>
       ) : (
-        <div className="content">
+        <div className="content" data-aos="fade-up" data-aos-offset="500">
           <Car />
           <h2>INNOWACYJNA AERODYNAMIKA BMW iX.</h2>
-          <h4>
+          <h3>
             BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża
             zasadę „forma podąża za funkcją”.
-          </h4>
+          </h3>
           <p>
             Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową
             kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu
@@ -79,12 +79,12 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
         </div>
       )}
       {type === "blocks" ? (
-        <div className="images">
+        <div className="images" data-aos="fade-up">
           <img src={foto1} alt="BMW iX from front side" />
           <img src={foto2} alt="Two cards sideways" />
         </div>
       ) : (
-        <div className="images">
+        <div className="images" data-aos="fade-up" data-aos-offset="500">
           <img src={foto4} alt="BMW iX from back side" />
           <img src={foto3} alt="BMW iX sideways" />
         </div>

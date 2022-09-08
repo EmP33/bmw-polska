@@ -78,10 +78,11 @@ export const Container = styled.footer`
     }
 
     & > div {
-      h5 {
+      span {
         color: var(--color-gray-3);
         font-size: 1.25rem;
         font-weight: 300;
+        display: block;
         margin-bottom: 2rem;
       }
 

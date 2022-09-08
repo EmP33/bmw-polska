@@ -38,7 +38,6 @@ describe("<Gallery />", () => {
     renderProps();
     render(<Gallery />);
     const imageElements: HTMLImageElement[] = screen.getAllByRole("img");
-    console.log(screen.getAllByRole("img"));
 
     expect(imageElements[0].src).toContain("@2x");
     expect(imageElements[1].src).toContain("@2x");

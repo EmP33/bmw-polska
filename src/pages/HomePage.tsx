@@ -61,13 +61,13 @@ const HomePage = () => {
             <h1>
               <span>NOWE</span> BMW iX
             </h1>
-            <h3>PIONIER NOWEJ ERY.</h3>
+            <h2>PIONIER NOWEJ ERY.</h2>
           </div>
           <Pagination
             swipeSlide={swipeSlide}
             handleChangeSlide={handleChangeSlide}
           />
-          <PrimaryButton>
+          <PrimaryButton data-aos="fade-up" data-aos-delay="600">
             <a href="#contact">Umów jazdę próbną</a>
           </PrimaryButton>
         </div>

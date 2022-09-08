@@ -15,6 +15,7 @@ import Gallery from "../components/Gallery/Gallery";
 // Icons
 import { BmwILogo } from "../assets";
 import Menu from "../components/Menu/Menu";
+import Contact from "../components/Contact/Contact";
 
 const containerVariants = {
   hidden: {
@@ -65,6 +66,7 @@ const HomePage = () => {
       <ContentSection type="blocks" />
       <ContentSection type="text" />
       <Gallery />
+      <Contact />
       {ReactDOM.createPortal(
         <Menu showMenu={showMenu} toggleMenu={handleToggleMenu} />,
         document.querySelector("#backdrop-root")!

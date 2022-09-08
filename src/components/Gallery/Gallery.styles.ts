@@ -7,7 +7,6 @@ export const Container = styled.div`
   grid-template-rows: repeat(2, 18vw);
   row-gap: 0.625rem;
   column-gap: 0.625rem;
-  margin-bottom: 50rem; // TEMP
   overflow: hidden;
 
   @media only screen and (max-width: 1200px) {

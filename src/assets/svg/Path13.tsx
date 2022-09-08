@@ -17,8 +17,8 @@ const Path13 = () => {
           y2="1"
           gradientUnits="objectBoundingBox"
         >
-          <stop offset="0" stop-color="#fff" stop-opacity="0" />
-          <stop offset="1" stop-color="#efefef" />
+          <stop offset="0" stopColor="#fff" stopOpacity="0" />
+          <stop offset="1" stopColor="#efefef" />
         </linearGradient>
       </defs>
       <path

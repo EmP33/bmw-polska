@@ -20,7 +20,7 @@ export const Swiper = styled.div<{ swipeSlide: number }>`
       object-position: center;
 
       @media only screen and (max-width: 400px) {
-        width: 100%;
+        width: auto;
       }
       @media only screen and (min-width: 2150px) {
         width: 100%;

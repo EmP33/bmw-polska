@@ -3,12 +3,12 @@ import React from "react";
 import { Container } from "./Footer.styles";
 // Icons
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
+  FacebookIcon,
+  InstagramIcon,
+  YoutubeIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from "../../assets";
 const Footer = () => {
   return (
     <Container>
@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="socials">
           <span>Dołącz do nas</span>
           <div className="socials__icons">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaYoutube />
-            <FaLinkedinIn />
-            <FaTwitter />
+            <FacebookIcon />
+            <InstagramIcon />
+            <YoutubeIcon />
+            <LinkedinIcon />
+            <TwitterIcon />
           </div>
         </div>
         <div className="footer-links">

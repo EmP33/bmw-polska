@@ -27,13 +27,17 @@ export const Container = styled.nav`
     }
 
     li {
-      font-size: 1.125rem;
-      font-family: var(--font-heading);
-      font-weight: bold;
-      letter-spacing: 0.9px;
       padding-bottom: 1rem;
       border-bottom: 3px solid transparent;
       cursor: pointer;
+      a {
+        letter-spacing: 0.9px;
+        font-size: 1.125rem;
+        color: var(--color-white);
+        text-decoration: none;
+        font-family: var(--font-heading);
+        font-weight: bold;
+      }
 
       &:hover {
         border-bottom: 3px solid var(--color-blue);

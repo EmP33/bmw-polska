@@ -20,31 +20,22 @@ const Gallery = () => {
     <Container>
       <img
         data-aos="zoom-in"
-        data-aos-offset="700"
         src={matches ? insideFront : insideFront4k}
         alt="BMW iX inside front"
       />
       <img
         data-aos="zoom-in"
-        data-aos-offset="1000"
         src={matches ? foto3 : foto34k}
         alt="BMW iX back"
       />
       <img
         data-aos="zoom-in"
-        data-aos-offset="1000"
         src={matches ? insideBack : insideBack4k}
         alt="BMW iX inside back"
       />
+      <img data-aos="zoom-in" src={sliderPhoto} alt="BMW iX front" />
       <img
         data-aos="zoom-in"
-        data-aos-offset="1000"
-        src={sliderPhoto}
-        alt="BMW iX front"
-      />
-      <img
-        data-aos="zoom-in"
-        data-aos-offset="1000"
         src={matches ? foto2 : foto24k}
         alt="BMW iX back"
       />

@@ -26,6 +26,7 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
     register,
     handleSubmit,
     setValue,
+    watch,
     formState: { errors },
   } = useForm<Inputs>();
 
@@ -42,12 +43,7 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
   return (
     <Container id="contact">
       <Contact>
-        <img
-          src={frontBmw}
-          alt="bmw ix from front"
-          data-aos="fade-right"
-          data-aos-offset="1000"
-        />
+        <img src={frontBmw} alt="bmw ix from front" data-aos="fade-right" />
         <Path12 />
         <Path13 />
         <Path14 />
@@ -73,7 +69,12 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
                   value="he"
                   {...register("gender", { required: true })}
                 />
-                <span className="checkmark"></span>
+                <span
+                  tabIndex={0}
+                  aria-checked={watch("gender") === "he"}
+                  role="radio"
+                  className="checkmark"
+                ></span>
                 Pan
               </label>
               <label htmlFor="mrs" className="container">
@@ -83,7 +84,12 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
                   value="she"
                   {...register("gender", { required: true })}
                 />
-                <span className="checkmark"></span>
+                <span
+                  tabIndex={0}
+                  aria-checked={watch("gender") === "she"}
+                  role="radio"
+                  className="checkmark"
+                ></span>
                 Pani
               </label>
               {errors.gender && <span role="alert">Wybierz płeć</span>}
@@ -134,12 +140,7 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
             <PrimaryButton type="submit">WYŚLIJ</PrimaryButton>
           </form>
         </div>
-        <img
-          src={sideBmw}
-          alt="bmw ix from side"
-          data-aos="fade-left"
-          data-aos-offset="500"
-        />
+        <img src={sideBmw} alt="bmw ix from side" data-aos="fade-left" />
       </Contact>
     </Container>
   );

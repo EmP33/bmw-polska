@@ -56,12 +56,12 @@ export const Container = styled.footer`
         display: block;
         width: 1.25rem;
         height: 1.25rem;
-        color: #333;
+        fill: #333;
         cursor: pointer;
         grid-row: 2;
 
         &:hover {
-          color: #222;
+          fill: #222;
         }
       }
     }

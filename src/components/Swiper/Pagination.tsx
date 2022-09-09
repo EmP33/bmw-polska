@@ -23,7 +23,12 @@ const PaginationComponent: React.FC<Props> = ({
             onChange={handleChangeSlide.bind(null, 0)}
             checked={swipeSlide === 0}
           />
-          <span className="checkmark"></span>
+          <span
+            aria-checked={swipeSlide === 0}
+            role="radio"
+            className="checkmark"
+            aria-label="Switch slide"
+          ></span>
         </label>
       </li>
       <li>
@@ -36,7 +41,12 @@ const PaginationComponent: React.FC<Props> = ({
             onChange={handleChangeSlide.bind(null, 1)}
             checked={swipeSlide === 1}
           />
-          <span className="checkmark"></span>
+          <span
+            aria-checked={swipeSlide === 0}
+            role="radio"
+            className="checkmark"
+            aria-label="Switch slide"
+          ></span>
         </label>
       </li>
 
@@ -50,7 +60,12 @@ const PaginationComponent: React.FC<Props> = ({
             onChange={handleChangeSlide.bind(null, 2)}
             checked={swipeSlide === 2}
           />
-          <span className="checkmark"></span>
+          <span
+            aria-checked={swipeSlide === 0}
+            role="radio"
+            className="checkmark"
+            aria-label="Switch slide"
+          ></span>
         </label>
       </li>
     </Pagination>

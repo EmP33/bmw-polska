@@ -12,14 +12,18 @@ interface Props {
 const Appbar: React.FC<Props> = ({ toggleMenu }) => {
   return (
     <Container>
-      <HamburgerButton onClick={toggleMenu}>
+      <HamburgerButton onClick={toggleMenu} aria-label="menu button">
         <span></span>
         <span></span>
         <span></span>
       </HamburgerButton>
       <ul>
-        <li>Nowe BMW iX</li>
-        <li>Umów jazdę próbną</li>
+        <li>
+          <a href="#info">Nowe BMW iX</a>
+        </li>
+        <li>
+          <a href="#contact">Umów jazdę próbną</a>
+        </li>
       </ul>
       <BmwLogo />
       <p>

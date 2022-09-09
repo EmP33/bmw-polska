@@ -19,7 +19,7 @@ interface Props {
 
 const ContentSectionComponent: React.FC<Props> = ({ type }) => {
   return (
-    <ContentSection type={type}>
+    <ContentSection type={type} id="info">
       {type === "blocks" ? (
         <div className="content" data-aos="fade-up">
           <ElectricStation />
@@ -60,7 +60,7 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
           </div>
         </div>
       ) : (
-        <div className="content" data-aos="fade-up" data-aos-offset="500">
+        <div className="content" data-aos="fade-up">
           <Car />
           <h2>INNOWACYJNA AERODYNAMIKA BMW iX.</h2>
           <h3>
@@ -84,7 +84,7 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
           <img src={foto2} alt="Two cards sideways" />
         </div>
       ) : (
-        <div className="images" data-aos="fade-up" data-aos-offset="500">
+        <div className="images" data-aos="fade-up">
           <img src={foto4} alt="BMW iX from back side" />
           <img src={foto3} alt="BMW iX sideways" />
         </div>

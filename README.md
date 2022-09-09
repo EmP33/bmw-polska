@@ -4,6 +4,9 @@
 Jest to projekt stworzony z zadania rekrutacyjnego. Jest w pełni responsywny oraz pokryty testami jednostkowymi.
 
 
+https://emp33-recruitment-project.vercel.app/
+
+
 ## How to run this project
 
 To get all necessary files
@@ -50,7 +53,7 @@ To test application
 
 ## Screenshots
 
-![Desktop](https://res.cloudinary.com/dtbemnmn4/image/upload/v1662714113/github/screencapture-localhost-3000-2022-09-09-11_00_04_jxpdoe.png)
+![Desktop](https://res.cloudinary.com/dtbemnmn4/image/upload/v1662714978/github/host-3000-2022-09-09-11_00_04_jxpdoe_c3n22i.webp)
 ![Mobile Device](https://res.cloudinary.com/dtbemnmn4/image/upload/v1662714111/github/screencapture-emp33-recruitment-project-vercel-app-2022-09-09-11_01_14_vxkyxa.png)
 
 

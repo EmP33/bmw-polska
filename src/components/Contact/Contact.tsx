@@ -116,7 +116,7 @@ const ContactComponent: React.FC<Props> = ({ handleGreetings }) => {
             </div>
             <div className="input-wrapper">
               <input
-                type="text"
+                type="email"
                 placeholder="E-mail*"
                 {...register("email", {
                   required: true,

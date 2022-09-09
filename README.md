@@ -4,6 +4,9 @@
 Jest to projekt stworzony z zadania rekrutacyjnego. Jest w pełni responsywny oraz pokryty testami jednostkowymi.
 
 
+https://emp33-recruitment-project.vercel.app/
+
+
 ## How to run this project
 
 To get all necessary files

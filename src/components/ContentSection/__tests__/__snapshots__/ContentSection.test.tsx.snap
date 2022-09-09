@@ -2,10 +2,12 @@
 
 exports[`<ContentSection /> should render ContentSection blocks type properly 1`] = `
 <styled.section
+  id="info"
   type="blocks"
 >
   <div
     className="content"
+    data-aos="fade-up"
   >
     <ElectricStation />
     <h2>
@@ -17,9 +19,9 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
       <div
         className="block"
       >
-        <h6>
+        <h3>
           01
-        </h6>
+        </h3>
         <p>
           Ponad 600 km zasięgu *
         </p>
@@ -27,9 +29,9 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
       <div
         className="block"
       >
-        <h6>
+        <h3>
           02
-        </h6>
+        </h3>
         <p>
           Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi
           <br />
@@ -41,9 +43,9 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
       <div
         className="block"
       >
-        <h6>
+        <h3>
           03
-        </h6>
+        </h3>
         <p>
           Od 0 do 100 km / h 
           <br />
@@ -53,9 +55,9 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
       <div
         className="block"
       >
-        <h6>
+        <h3>
           04
-        </h6>
+        </h3>
         <p>
           Ładowanie 120 km 
           <br />
@@ -65,9 +67,9 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
       <div
         className="block"
       >
-        <h6>
+        <h3>
           05
-        </h6>
+        </h3>
         <p>
           Publiczne szybkie ładowanie od 10 do 80% w mniej niż 
           <br />
@@ -78,14 +80,15 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
   </div>
   <div
     className="images"
+    data-aos="fade-up"
   >
     <img
       alt="BMW iX from front side"
-      src="foto1_1.png"
+      src="foto1_1.webp"
     />
     <img
       alt="Two cards sideways"
-      src="foto1_2.png"
+      src="foto1_2.webp"
     />
   </div>
 </styled.section>
@@ -93,32 +96,36 @@ exports[`<ContentSection /> should render ContentSection blocks type properly 1`
 
 exports[`<ContentSection /> should render ContentSection text type properly 1`] = `
 <styled.section
+  id="info"
   type="text"
 >
   <div
     className="content"
+    data-aos="fade-up"
+    id="info2"
   >
     <Car />
     <h2>
       INNOWACYJNA AERODYNAMIKA BMW iX.
     </h2>
-    <h4>
+    <h3>
       BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę „forma podąża za funkcją”.
-    </h4>
+    </h3>
     <p>
       Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową kabiny i zredukowanymi fugami oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz dyfuzorem z tyłu i niezwykłymi detalami, takimi jak wpuszczane klamki czy zintegrowane z listwami szybowymi lusterka zewnętrzne, BMW iX osiąga doskonały współczynnik Cx wynoszący zaledwie 0,25. Dzięki temu łączy w sobie zasięg i wydajność z innowacyjną konstrukcją SAV-a.
     </p>
   </div>
   <div
     className="images"
+    data-aos="fade-up"
   >
     <img
       alt="BMW iX from back side"
-      src="foto2_2.png"
+      src="foto2_2.webp"
     />
     <img
       alt="BMW iX sideways"
-      src="foto2_1.png"
+      src="foto2_1.webp"
     />
   </div>
 </styled.section>

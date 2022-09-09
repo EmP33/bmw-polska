@@ -17,7 +17,7 @@ import foto2 from "../../assets/images/foto2_2.webp";
 const Gallery = () => {
   const matches = useMediaQuery("(max-width: 900px)");
   return (
-    <Container>
+    <Container id="gallery">
       <img
         data-aos="zoom-in"
         src={matches ? insideFront : insideFront4k}

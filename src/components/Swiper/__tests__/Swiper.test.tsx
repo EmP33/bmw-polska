@@ -75,9 +75,9 @@ describe("<Swiper />", () => {
       "New BMW iX slide"
     ) as HTMLImageElement[];
 
-    expect(imageElements[0].src).toContain("slider1-mobile.png");
-    expect(imageElements[1].src).toContain("slider1-mobile.png");
-    expect(imageElements[2].src).toContain("slider1-mobile.png");
+    expect(imageElements[0].src).toContain("slider1-mobile.webp");
+    expect(imageElements[1].src).toContain("slider1-mobile.webp");
+    expect(imageElements[2].src).toContain("slider1-mobile.webp");
   });
 
   it("should use normal image when screen resolution is greater than 360px", () => {
@@ -87,8 +87,8 @@ describe("<Swiper />", () => {
       "New BMW iX slide"
     ) as HTMLImageElement[];
 
-    expect(imageElements[0].src).toContain("slider1.png");
-    expect(imageElements[1].src).toContain("slider1.png");
-    expect(imageElements[2].src).toContain("slider1.png");
+    expect(imageElements[0].src).toContain("slider1.webp");
+    expect(imageElements[1].src).toContain("slider1.webp");
+    expect(imageElements[2].src).toContain("slider1.webp");
   });
 });

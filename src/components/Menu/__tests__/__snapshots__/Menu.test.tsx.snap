@@ -18,17 +18,38 @@ exports[`<Menu /> should render properly 1`] = `
   </div>
   <ul>
     <li>
-      NOWE BMW iX
+      <a
+        href="#info"
+        onClick={[MockFunction]}
+      >
+        NOWE BMW iX
+      </a>
     </li>
     <li>
-      INNOWACYJNA AERODYNAMIKA
+      <a
+        href="#info2"
+        onClick={[MockFunction]}
+      >
+        INNOWACYJNA AERODYNAMIKA
+      </a>
     </li>
     <li>
-      GALERIA
+      <a
+        href="#gallery"
+        onClick={[MockFunction]}
+      >
+        GALERIA
+      </a>
     </li>
   </ul>
-  <styled.button>
-    UMÓW JAZDĘ PRÓBNĄ
+  <styled.button
+    onClick={[MockFunction]}
+  >
+    <a
+      href="#contact"
+    >
+      UMÓW JAZDĘ PRÓBNĄ
+    </a>
   </styled.button>
 </styled.div>
 `;

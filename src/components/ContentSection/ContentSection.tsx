@@ -60,7 +60,7 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
           </div>
         </div>
       ) : (
-        <div className="content" data-aos="fade-up">
+        <div className="content" data-aos="fade-up" id="info2">
           <Car />
           <h2>INNOWACYJNA AERODYNAMIKA BMW iX.</h2>
           <h3>

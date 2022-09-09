@@ -14,11 +14,11 @@ exports[`<Footer /> should render Footer properly 1`] = `
       <div
         className="socials__icons"
       >
-        <FaFacebookF />
-        <FaInstagram />
-        <FaYoutube />
-        <FaLinkedinIn />
-        <FaTwitter />
+        <FacebookIcon />
+        <InstagramIcon />
+        <YoutubeIcon />
+        <LinkedinIcon />
+        <TwitterIcon />
       </div>
     </div>
     <div
@@ -27,9 +27,9 @@ exports[`<Footer /> should render Footer properly 1`] = `
       <div
         className="footer-links__client"
       >
-        <h5>
+        <span>
           Strefa Klienta
-        </h5>
+        </span>
         <ul>
           <li>
             <a
@@ -64,9 +64,9 @@ exports[`<Footer /> should render Footer properly 1`] = `
       <div
         className="footer-links__bmw"
       >
-        <h5>
+        <span>
           Poznaj BMW
-        </h5>
+        </span>
         <ul>
           <li>
             <a
@@ -94,9 +94,9 @@ exports[`<Footer /> should render Footer properly 1`] = `
       <div
         className="footer-links__info"
       >
-        <h5>
+        <span>
           Informacje prawne
-        </h5>
+        </span>
         <ul>
           <li>
             <a

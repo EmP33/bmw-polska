@@ -3,6 +3,7 @@
 exports[`<Appbar /> should render properly 1`] = `
 <styled.nav>
   <styled.button
+    aria-label="menu button"
     onClick={[MockFunction]}
   >
     <span />
@@ -11,10 +12,18 @@ exports[`<Appbar /> should render properly 1`] = `
   </styled.button>
   <ul>
     <li>
-      Nowe BMW iX
+      <a
+        href="#info"
+      >
+        Nowe BMW iX
+      </a>
     </li>
     <li>
-      Umów jazdę próbną
+      <a
+        href="#contact"
+      >
+        Umów jazdę próbną
+      </a>
     </li>
   </ul>
   <BmwLogo />

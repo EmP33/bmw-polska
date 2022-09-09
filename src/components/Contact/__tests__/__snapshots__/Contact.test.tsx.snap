@@ -7,7 +7,8 @@ exports[`<Contact /> should render properly 1`] = `
   <styled.nav>
     <img
       alt="bmw ix from front"
-      src="bmw-ix-front.png"
+      data-aos="fade-right"
+      src="bmw-ix-front.webp"
     />
     <Path12 />
     <Path13 />
@@ -31,9 +32,9 @@ exports[`<Contact /> should render properly 1`] = `
     <div
       className="contact__form"
     >
-      <h6>
+      <h4>
         Wypełnij formularz swoimi danymi.
-      </h6>
+      </h4>
       <form
         onSubmit={[Function]}
       >
@@ -53,7 +54,10 @@ exports[`<Contact /> should render properly 1`] = `
               value="he"
             />
             <span
+              aria-checked={false}
               className="checkmark"
+              role="radio"
+              tabIndex={0}
             />
             Pan
           </label>
@@ -70,7 +74,10 @@ exports[`<Contact /> should render properly 1`] = `
               value="she"
             />
             <span
+              aria-checked={false}
               className="checkmark"
+              role="radio"
+              tabIndex={0}
             />
             Pani
           </label>
@@ -128,7 +135,8 @@ exports[`<Contact /> should render properly 1`] = `
     </div>
     <img
       alt="bmw ix from side"
-      src="13273-2022-bmw-ix.png"
+      data-aos="fade-left"
+      src="13273-2022-bmw-ix.webp"
     />
   </styled.nav>
 </styled.div>

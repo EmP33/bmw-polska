@@ -9,7 +9,7 @@ exports[`<Swiper /> should render Swiper Component properly 1`] = `
   >
     <img
       alt="New BMW iX slide"
-      src="slider1-mobile.png"
+      src="slider1-mobile.webp"
     />
   </div>
   <div
@@ -17,7 +17,7 @@ exports[`<Swiper /> should render Swiper Component properly 1`] = `
   >
     <img
       alt="New BMW iX slide"
-      src="slider1-mobile.png"
+      src="slider1-mobile.webp"
     />
   </div>
   <div
@@ -25,7 +25,7 @@ exports[`<Swiper /> should render Swiper Component properly 1`] = `
   >
     <img
       alt="New BMW iX slide"
-      src="slider1-mobile.png"
+      src="slider1-mobile.webp"
     />
   </div>
 </styled.div>

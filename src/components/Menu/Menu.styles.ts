@@ -62,10 +62,17 @@ export const Container = styled.div<{ showMenu: boolean }>`
     margin: 0 auto;
 
     & > li {
-      font-family: var(--font-heading);
-      font-weight: 600;
-      padding: 2rem 0 2rem 0;
       cursor: pointer;
+
+      a {
+        font-family: var(--font-heading);
+        font-weight: 600;
+        display: block;
+        padding: 2rem 0 2rem 0;
+        width: 100%;
+        color: var(--color-white);
+        text-decoration: none;
+      }
 
       &:hover {
         color: var(--color-gray-6);

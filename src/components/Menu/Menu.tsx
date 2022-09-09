@@ -20,11 +20,25 @@ const Menu: React.FC<Props> = ({ toggleMenu, showMenu }) => {
         </button>
       </div>
       <ul>
-        <li>NOWE BMW iX</li>
-        <li>INNOWACYJNA AERODYNAMIKA</li>
-        <li>GALERIA</li>
+        <li>
+          <a onClick={toggleMenu} href="#info">
+            NOWE BMW iX
+          </a>
+        </li>
+        <li>
+          <a onClick={toggleMenu} href="#info2">
+            INNOWACYJNA AERODYNAMIKA
+          </a>
+        </li>
+        <li>
+          <a onClick={toggleMenu} href="#gallery">
+            GALERIA
+          </a>
+        </li>
       </ul>
-      <PrimaryButton>UMÓW JAZDĘ PRÓBNĄ</PrimaryButton>
+      <PrimaryButton onClick={toggleMenu}>
+        <a href="#contact">UMÓW JAZDĘ PRÓBNĄ</a>
+      </PrimaryButton>
     </Container>
   );
 };

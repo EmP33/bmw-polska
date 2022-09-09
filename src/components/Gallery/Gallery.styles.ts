@@ -28,6 +28,11 @@ export const Container = styled.div`
     height: 100%;
     object-fit: cover;
     display: block;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(80%);
+    }
 
     &:nth-child(1) {
       grid-column: 1/7;
@@ -69,4 +74,29 @@ export const Container = styled.div`
       }
     }
   }
+`;
+
+export const FullscreenImage = styled.img`
+  max-width: 750px;
+  width: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+
+  @media only screen and (max-width: 800px) {
+    width: 90%;
+  }
+`;
+
+export const Backdrop = styled.div`
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  overflow: hidden;
 `;

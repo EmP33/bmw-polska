@@ -1,33 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Gallery /> should render properly 1`] = `
-<styled.div
-  id="gallery"
->
-  <img
-    alt="BMW iX inside front"
-    data-aos="zoom-in"
-    src="inside-front@2x.webp"
-  />
-  <img
-    alt="BMW iX back"
-    data-aos="zoom-in"
-    src="foto3_1@2x.webp"
-  />
-  <img
-    alt="BMW iX inside back"
-    data-aos="zoom-in"
-    src="inside-back@2x.webp"
-  />
-  <img
-    alt="BMW iX front"
-    data-aos="zoom-in"
-    src="slider1.webp"
-  />
-  <img
-    alt="BMW iX back"
-    data-aos="zoom-in"
-    src="foto2_2@2x.webp"
-  />
-</styled.div>
+<React.Fragment>
+  <styled.div
+    id="gallery"
+  >
+    <img
+      alt="BMW iX inside front"
+      data-aos="zoom-in"
+      onClick={[Function]}
+      src="inside-front@2x.webp"
+    />
+    <img
+      alt="BMW iX back"
+      data-aos="zoom-in"
+      onClick={[Function]}
+      src="foto3_1@2x.webp"
+    />
+    <img
+      alt="BMW iX inside back"
+      data-aos="zoom-in"
+      onClick={[Function]}
+      src="inside-back@2x.webp"
+    />
+    <img
+      alt="BMW iX front"
+      data-aos="zoom-in"
+      onClick={[Function]}
+      src="slider1.webp"
+    />
+    <img
+      alt="BMW iX back"
+      data-aos="zoom-in"
+      onClick={[Function]}
+      src="foto2_2@2x.webp"
+    />
+  </styled.div>
+</React.Fragment>
 `;

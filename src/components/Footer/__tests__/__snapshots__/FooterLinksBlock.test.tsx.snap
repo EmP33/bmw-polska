@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render Footer properly 1`] = `
+<div
+  className="footer-links__block"
+>
+  <span>
+    Informacje prawne
+  </span>
+  <ul>
+    <li>
+      <a
+        href="#"
+      >
+        Mapa serwisu
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Nota prawna / Prywatność
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Polityka cookie
+      </a>
+    </li>
+    <li>
+      <a
+        href="#"
+      >
+        Warunki korzystania z MyBMW
+      </a>
+    </li>
+  </ul>
+</div>
+`;

@@ -33,27 +33,21 @@ const ContentSectionComponent: React.FC<Props> = ({ type }) => {
               <h3>02</h3>
               <p>
                 Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi
-                <br />
-                elektrycznie i ponad 500 KM
-                <br /> (370 kW) *
+                elektrycznie i ponad 500 KM (370 kW) *
               </p>
             </div>
             <div className="block">
               <h3>03</h3>
-              <p>
-                Od 0 do 100 km / h <br /> w mniej niż 5 sekund *
-              </p>
+              <p>Od 0 do 100 km / h w mniej niż 5 sekund *</p>
             </div>
             <div className="block">
               <h3>04</h3>
-              <p>
-                Ładowanie 120 km <br /> w 10 minut *
-              </p>
+              <p>Ładowanie 120 km w 10 minut *</p>
             </div>
             <div className="block">
               <h3>05</h3>
               <p>
-                Publiczne szybkie ładowanie od 10 do 80% w mniej niż <br /> 40
+                Publiczne szybkie ładowanie <br /> od 10 do 80% w mniej niż 40
                 minut
               </p>
             </div>

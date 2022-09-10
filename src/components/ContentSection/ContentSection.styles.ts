@@ -88,7 +88,7 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
       }
     }
 
-    h3 {
+    & > h3 {
       font-size: 1.25rem;
       font-family: var(--font-primary);
       font-weight: 300;
@@ -158,6 +158,10 @@ export const ContentSection = styled.section<{ type: "blocks" | "text" }>`
           color: var(--color-gray-1);
           padding-top: 1rem;
           font-family: var(--font-primary);
+
+          @media only screen and (max-width: 600px) {
+            width: 80%;
+          }
         }
       }
     }
